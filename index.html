@@ -115,6 +115,19 @@ class: center, middle
 ![scikit-learn](img/scikit-learn-logo.png)
 ]
 
+### Machine learning for everyone <div class="h3" align="right">--- from expert to beginners </div>
+
+* Users everywhere: academia, startups, large companies
+* Development focused on collaboration & quality
+* Always getting better: faster and easier
+* Sustainability challenging
+
+---
+.center[
+![scikit-learn](img/scikit-learn-logo.png)
+]
+
+
 ### Library of Machine Learning algorithms
 
 ### Open Source project
@@ -140,21 +153,6 @@ background-size: contain
 ---
 background-image: url(img/scikit-learn.org.png)
 background-size: contain
-
-
----
-# Scikit-learn: the vision
-
-### Machine learning for everyone <div class="h3" align="right">--- from expert to beginners </div>
-
-* Users everywhere: academia, startups, large companies
-* Development focused on collaboration & quality
-* Always getting better: faster and easier
-* Sustainability challenging
-
-<center>
-![:scale 25%](img/sklearn_logo.png)
-</center>
 
 
 ---
@@ -224,24 +222,17 @@ class: center, middle
 * Experience for people involved in the development
 
 ---
-# Scikit-learn features
+# Other contributions
 
 * `ColumnTransformer`
 * `CategoricalEncoder`
-* `MICEImputer`
-* `PowerTransformer`
 * `TransformedTargetRegressor`
 * `StackingClassifier` and `StackingRegressor`
+* ...
 
 Aim: Features developed to enable baseline machine learning algorithms and
 pipeline
 
-
-
-
----
-
-slides about Thomas Moreau mission doctoral funded by Digicosme
 
 ---
 class: center, middle
@@ -311,6 +302,56 @@ class: center, middle
 <center>
   ![:scale 75%](img/vital_code.png)
 </center>
+
+---
+
+# Scikit-learn* development
+
+Main bottleneck are maintainers
+
+* Reviewing pull requests
+* Deciding on design questions
+* Tackling bigger issues
+* Infrastructure work (CI, packaging, ...)
+
+High-quality open source software is not built on hackatons, but needs highly engaged developers
+
+<div style="margin-bottom:120px"></div>
+
+.grey[.right[.small[*The same is true for other open source packages]]]
+
+---
+
+# How can you help?
+
+### Engage with the community
+
+### Contribute feedback
+
+### Contribute code
+
+### Employ developers / allow employees to contribute
+
+### Fund
+
+
+---
+.center[
+![scikit-learn](img/scikit-learn-logo.png)
+]
+
+### Machine learning for everyone <div class="h3" align="right">--- from expert to beginners </div>
+
+* Users everywhere: academia, startups, large companies
+* Development focused on collaboration & quality
+* Always getting better: faster and easier
+* Sustainability challenging
+
+
+---
+
+
+
 
 ---
 
@@ -498,7 +539,11 @@ count: false
         var url = this;
         return '<img src="' + url + '" style="width: ' + percentage + '" />';
       };
-      var slideshow = remark.create();
+      config_remark = {
+        // ratio: "16:9"
+        slideNumberFormat: '%current% / 33',
+      };
+      var slideshow = remark.create(config_remark);
     </script>
   </body>
 </html>
